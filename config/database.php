@@ -30,7 +30,6 @@ function dbConnexion() {
         //comment me renvoyer les données
         $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-        var_dump($pdo);
         return $pdo;     // renvois $pdo pour l'utiliser ailleurs (ex: u autre fichier php)
 
     } catch (PDOException $e) {           // si une erreur se produit dans try =, on entre ici.
